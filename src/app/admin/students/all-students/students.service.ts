@@ -32,47 +32,20 @@ export class StudentsService extends UnsubscribeOnDestroyAdapter {
       },
       error: (error: HttpErrorResponse) => {
         this.isTblLoading = false;
-        console.log(error.name + ' ' + error.message);
+        console.log(error.name + 'http://localhost:3000/0' + error.message);
       },
     });
   }
   addStudents(students: Students): void {
     this.dialogData = students;
 
-    // this.httpClient.post(this.API_URL, students)
-    //   .subscribe({
-    //     next: (data) => {
-    //       this.dialogData = students;
-    //     },
-    //     error: (error: HttpErrorResponse) => {
-    //        // error code here
-    //     },
-    //   });
   }
   updateStudents(students: Students): void {
     this.dialogData = students;
 
-    // this.httpClient.put(this.API_URL + students.id, students)
-    //     .subscribe({
-    //       next: (data) => {
-    //         this.dialogData = students;
-    //       },
-    //       error: (error: HttpErrorResponse) => {
-    //          // error code here
-    //       },
-    //     });
   }
   deleteStudents(id: number): void {
     console.log(id);
 
-    // this.httpClient.delete(this.API_URL + id)
-    //     .subscribe({
-    //       next: (data) => {
-    //         console.log(id);
-    //       },
-    //       error: (error: HttpErrorResponse) => {
-    //          // error code here
-    //       },
-    //     });
   }
 }

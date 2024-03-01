@@ -41,24 +41,24 @@ export class SigninComponent
 
   ngOnInit(): void {
     this.authForm = this.formBuilder.group({
-      username: ['admin@school.org', Validators.required],
-      password: ['admin@123', Validators.required],
+      username: ['admin@mhz.com', Validators.required],
+      password: ['123456', Validators.required],
     });
   }
   get f() {
     return this.authForm.controls;
   }
   adminSet() {
-    this.authForm.get('username')?.setValue('admin@school.org');
-    this.authForm.get('password')?.setValue('admin@123');
+    this.authForm.get('username')?.setValue('admin@mhz.com');
+    this.authForm.get('password')?.setValue('123456');
   }
   teacherSet() {
-    this.authForm.get('username')?.setValue('teacher@school.org');
-    this.authForm.get('password')?.setValue('teacher@123');
+    this.authForm.get('username')?.setValue('teacher@mhz.com');
+    this.authForm.get('password')?.setValue('123456');
   }
   studentSet() {
-    this.authForm.get('username')?.setValue('student@school.org');
-    this.authForm.get('password')?.setValue('student@123');
+    this.authForm.get('username')?.setValue('student@mhz.com');
+    this.authForm.get('password')?.setValue('123456');
   }
   onSubmit() {
     this.submitted = true;

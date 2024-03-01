@@ -15,8 +15,8 @@ export class AuthService {
     {
       id: 1,
       img: 'assets/images/user/admin.jpg',
-      username: 'admin@school.org',
-      password: 'admin@123',
+      username: 'admin@mhz.com',
+      password: '123456',
       firstName: 'Sarah',
       lastName: 'Smith',
       role: Role.Admin,
@@ -25,8 +25,8 @@ export class AuthService {
     {
       id: 2,
       img: 'assets/images/user/teacher.jpg',
-      username: 'teacher@school.org',
-      password: 'teacher@123',
+      username: 'teacher@mhz.com',
+      password: '123456',
       firstName: 'Ashton',
       lastName: 'Cox',
       role: Role.Teacher,
@@ -35,8 +35,8 @@ export class AuthService {
     {
       id: 3,
       img: 'assets/images/user/student.jpg',
-      username: 'student@school.org',
-      password: 'student@123',
+      username: 'student@mhz.com',
+      password: '123456',
       firstName: 'Ashton',
       lastName: 'Cox',
       role: Role.Student,
